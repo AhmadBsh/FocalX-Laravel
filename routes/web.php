@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\StudentsController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,8 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PagesController::class,'index']);
 Route::get('/About', [PagesController::class,'About']);
-Route::get('/Students', [StudentsController::class,'index']);
-// Route::delete('/Students/delete', [StudentsController::class,'delete']);
-// Route::post('/Students/store', [StudentsController::class,'store']);
+Route::get('/Students', [StudentsController::class,'Show']);
+Route::get('/product', [ProductController::class,'index']);
+
+
 
 
